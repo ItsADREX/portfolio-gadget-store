@@ -1,25 +1,4 @@
-tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['"Inter Tight"', 'system-ui', 'sans-serif'],
-          mono: ['"JetBrains Mono"', 'monospace']
-        },
-        colors: {
-          ink: '#000000',
-          panel: '#0a0a0a',
-          panel2: '#111111',
-          line: '#1f1f1f',
-          dim: '#8a8a8e',
-          accent: '#0a84ff',
-          accent2: '#5e5cff'
-        }
-      }
-    }
-  };
-
-/* ---- next block ---- */
-
+document.addEventListener('DOMContentLoaded', () => {
 // mobile menu
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -142,3 +121,4 @@ tailwind.config = {
       btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>';
     }, 1400);
   });
+});
