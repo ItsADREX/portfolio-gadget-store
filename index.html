@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="KOVA — premium phones, laptops and accessories. New and certified pre-owned, delivered nationwide across Nigeria. WhatsApp ordering, real warranty, real specs." />
+<title>KOVA · Premium Phones, Laptops & Accessories</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+  <div class="nav-blur border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
+      <a href="#" class="font-bold text-lg tracking-tight">KOVA</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm text-white/75">
+        <a href="#phones" class="hover:text-white transition">Phones</a>
+        <a href="#laptops" class="hover:text-white transition">Laptops</a>
+        <a href="#preowned" class="hover:text-white transition">Pre-Owned</a>
+        <a href="#accessories" class="hover:text-white transition">Accessories</a>
+        <a href="#repairs" class="hover:text-white transition">Repairs</a>
+        <a href="#why" class="hover:text-white transition">Why KOVA</a>
+        <a href="#faq" class="hover:text-white transition">Support</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button class="hidden md:inline-flex w-9 h-9 items-center justify-center rounded-full hover:bg-white/10" aria-label="Search">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+        <button id="cartBtn" class="relative inline-flex w-9 h-9 items-center justify-center rounded-full hover:bg-white/10" aria-label="Cart">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 4h2l2.4 12.3A2 2 0 0 0 9.4 18h8.5a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+          <span id="cartCount" class="absolute -top-0.5 -right-0.5 hidden bg-accent text-white text-[10px] font-bold w-4 h-4 rounded-full items-center justify-center">0</span>
+        </button>
+        <button id="menuBtn" class="md:hidden inline-flex w-9 h-9 items-center justify-center rounded-full hover:bg-white/10" aria-label="Menu">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/5 px-5 py-5 flex flex-col gap-4 text-white/85">
+      <a href="#phones">Phones</a>
+      <a href="#laptops">Laptops</a>
+      <a href="#preowned">Pre-Owned</a>
+      <a href="#accessories">Accessories</a>
+      <a href="#repairs">Repairs</a>
+      <a href="#why">Why KOVA</a>
+      <a href="#faq">Support</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ANNOUNCEMENT BAR ===== -->
+<div class="bg-gradient-to-r from-accent/20 via-accent2/10 to-pink-500/10 border-b border-white/5 text-center py-2.5 text-xs md:text-sm tracking-wide pt-14">
+  <span class="text-white/85">Free nationwide delivery on orders above ₦500,000 · </span>
+  <a href="#preowned" class="text-accent hover:underline">Shop certified pre-owned →</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="relative pt-20 md:pt-28 pb-20 md:pb-28 overflow-hidden">
+  <!-- chromatic glow -->
+  <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[800px] chroma -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-5 md:px-8 text-center">
+    <p class="reveal text-xs md:text-sm uppercase tracking-[0.35em] text-accent mb-6">New · MacBook Pro M4</p>
+    <h1 class="reveal grad-text font-bold text-5xl sm:text-7xl md:text-8xl leading-[0.95] tracking-tight">
+      Power. <br class="md:hidden"/>Reimagined<span class="accent-grad">.</span>
+    </h1>
+    <p class="reveal mt-7 text-white/65 max-w-xl mx-auto text-lg md:text-xl">
+      The MacBook Pro M4 is here. With up to 24 hours of battery and the most advanced display ever in a notebook.
+    </p>
+    <div class="reveal mt-10 flex flex-wrap justify-center gap-3">
+      <a href="#laptops" class="btn-primary px-7 py-3 rounded-full text-sm font-semibold">Buy from ₦2,499,000</a>
+      <a href="#laptops" class="btn-ghost px-7 py-3 rounded-full text-sm font-semibold">Learn more →</a>
+    </div>
+
+    <!-- product image -->
+    <div class="reveal mt-14 md:mt-20 relative">
+      <div class="absolute inset-0 chroma -z-10 scale-75 mx-auto"></div>
+      <img class="float-y mx-auto max-w-[900px] w-full" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1600&q=80" alt="MacBook Pro M4"/>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST MARQUEE ===== -->
+<div class="border-y border-white/5 overflow-hidden py-6">
+  <div class="marquee flex gap-12 whitespace-nowrap text-white/40 text-sm md:text-base font-mono uppercase tracking-widest">
+    <span>· Apple Authorized</span><span>· Samsung Premium Partner</span><span>· Dell Certified</span><span>· HP Direct</span><span>· Sony</span><span>· JBL</span><span>· Huawei</span>
+    <span>· Apple Authorized</span><span>· Samsung Premium Partner</span><span>· Dell Certified</span><span>· HP Direct</span><span>· Sony</span><span>· JBL</span><span>· Huawei</span>
+  </div>
+</div>
+
+<!-- ===== CATEGORY GRID ===== -->
+<section id="categories" class="py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal flex items-end justify-between mb-10">
+      <div>
+        <p class="text-accent text-xs uppercase tracking-[0.3em] mb-3">Shop by category</p>
+        <h2 class="text-3xl md:text-5xl font-semibold tracking-tight grad-text">Everything you actually need.</h2>
+      </div>
+      <a href="#phones" class="hidden md:inline-flex text-sm text-accent hover:underline">View all →</a>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="#phones" class="reveal group product-card rounded-2xl overflow-hidden p-7 aspect-square flex flex-col justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-accent">Phones</p>
+          <h3 class="text-2xl font-semibold mt-2">iPhone · Samsung · Pixel</h3>
+        </div>
+        <img class="prod-img mx-auto h-44 object-contain" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=600&q=80" alt="Phones"/>
+        <span class="text-sm text-white/55 group-hover:text-white">Shop phones →</span>
+      </a>
+
+      <a href="#laptops" class="reveal group product-card rounded-2xl overflow-hidden p-7 aspect-square flex flex-col justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-accent">Laptops</p>
+          <h3 class="text-2xl font-semibold mt-2">MacBook · Dell · HP</h3>
+        </div>
+        <img class="prod-img mx-auto h-44 object-contain" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80" alt="Laptops"/>
+        <span class="text-sm text-white/55 group-hover:text-white">Shop laptops →</span>
+      </a>
+
+      <a href="#preowned" class="reveal group product-card rounded-2xl overflow-hidden p-7 aspect-square flex flex-col justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-accent">Pre-Owned</p>
+          <h3 class="text-2xl font-semibold mt-2">Verified · Warrantied</h3>
+        </div>
+        <img class="prod-img mx-auto h-44 object-contain" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80" alt="Pre-owned"/>
+        <span class="text-sm text-white/55 group-hover:text-white">Shop pre-owned →</span>
+      </a>
+
+      <a href="#accessories" class="reveal group product-card rounded-2xl overflow-hidden p-7 aspect-square flex flex-col justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-accent">Accessories</p>
+          <h3 class="text-2xl font-semibold mt-2">Audio · Cases · Cables</h3>
+        </div>
+        <img class="prod-img mx-auto h-44 object-contain" src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=600&q=80" alt="Accessories"/>
+        <span class="text-sm text-white/55 group-hover:text-white">Shop accessories →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PHONES ===== -->
+<section id="phones" class="py-20 md:py-28 px-5 md:px-8 bg-panel border-y border-line">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+      <div>
+        <p class="text-accent text-xs uppercase tracking-[0.3em] mb-3">Phones</p>
+        <h2 class="text-3xl md:text-5xl font-semibold tracking-tight grad-text">The latest, in your pocket.</h2>
+        <p class="text-white/55 mt-3 max-w-xl">Sealed and authentic. Original chargers, full warranty, real receipts.</p>
+      </div>
+      <!-- new vs preowned filter -->
+      <div class="inline-flex bg-panel2 border border-line rounded-full p-1 self-start md:self-end">
+        <button data-filter="all" class="seg-btn seg-active px-5 py-2 rounded-full text-sm">All</button>
+        <button data-filter="new" class="seg-btn px-5 py-2 rounded-full text-sm text-white/60">New</button>
+        <button data-filter="preowned" class="seg-btn px-5 py-2 rounded-full text-sm text-white/60">Pre-Owned</button>
+      </div>
+    </div>
+
+    <div id="phoneGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- ===== FEATURED HERO PRODUCT ===== -->
+<section class="py-20 md:py-32 px-5 md:px-8 relative overflow-hidden">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] chroma -z-10 opacity-50"></div>
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <p class="text-accent text-xs uppercase tracking-[0.3em] mb-4">Featured · iPhone 16 Pro Max</p>
+      <h2 class="text-4xl md:text-7xl font-bold leading-[0.95] tracking-tight grad-text">
+        Titanium. <br/>So strong. So light. <br/>So Pro<span class="accent-grad">.</span>
+      </h2>
+      <p class="mt-6 text-white/65 text-lg max-w-md">A18 Pro chip. Camera Control button. The brightest display ever on iPhone. Available 256GB to 1TB.</p>
+      <div class="mt-8 flex gap-3 flex-wrap">
+        <a href="#" class="btn-primary px-6 py-3 rounded-full font-semibold text-sm">Order from ₦1,749,000</a>
+        <a href="https://wa.me/2348024100099?text=Hi%20KOVA%2C%20I'd%20like%20to%20order%20the%20iPhone%2016%20Pro%20Max" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold border border-white/15 hover:border-green-400 hover:text-green-400 transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.9-.4-1.7-.9-2.4-1.6-.6-.6-1.1-1.3-1.5-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C3.9 14.9 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+          WhatsApp Order
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-3 gap-4 max-w-md">
+        <div><p class="text-2xl font-bold accent-grad">A18 Pro</p><p class="text-xs text-white/45">Chip</p></div>
+        <div><p class="text-2xl font-bold accent-grad">48MP</p><p class="text-xs text-white/45">Fusion Camera</p></div>
+        <div><p class="text-2xl font-bold accent-grad">2 yrs</p><p class="text-xs text-white/45">Warranty</p></div>
+      </div>
+    </div>
+    <div class="reveal relative">
+      <img src="https://images.unsplash.com/photo-1592286927505-1def25115558?auto=format&fit=crop&w=900&q=80" class="float-y w-full max-w-md mx-auto" alt="iPhone 16 Pro Max"/>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LAPTOPS ===== -->
+<section id="laptops" class="py-20 md:py-28 px-5 md:px-8 bg-panel border-y border-line">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal mb-10">
+      <p class="text-accent text-xs uppercase tracking-[0.3em] mb-3">Laptops</p>
+      <h2 class="text-3xl md:text-5xl font-semibold tracking-tight grad-text">Built for the work that matters.</h2>
+      <p class="text-white/55 mt-3 max-w-xl">From M-series MacBooks to Ryzen ThinkPads — fully sealed or expertly refurbished, ready to ship today.</p>
+    </div>
+    <div id="laptopGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- ===== PREOWNED PROMISE ===== -->
+<section id="preowned" class="py-20 md:py-32 px-5 md:px-8 relative overflow-hidden">
+  <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] chroma -z-10 opacity-40"></div>
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal text-center mb-14">
+      <p class="text-accent text-xs uppercase tracking-[0.3em] mb-3">Certified Pre-Owned</p>
+      <h2 class="text-3xl md:text-6xl font-semibold tracking-tight grad-text max-w-3xl mx-auto leading-tight">
+        Like new. Half the price. <br/>Fully <span class="accent-grad">verified</span>.
+      </h2>
+      <p class="text-white/55 mt-5 max-w-2xl mx-auto">Every pre-owned device passes our 28-point inspection. Battery health above 85%. Original parts only. Backed by a 30-day warranty.</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-4 mb-14">
+      <div class="reveal product-card rounded-2xl p-6 text-center">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7 21l-4-4 4-4M21 7l-4-4-4 4"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">28-point check</h3>
+        <p class="text-sm text-white/50">Camera, battery, screen, IMEI, ports — all tested.</p>
+      </div>
+      <div class="reveal product-card rounded-2xl p-6 text-center">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">30-day warranty</h3>
+        <p class="text-sm text-white/50">Full refund or swap, no questions asked.</p>
+      </div>
+      <div class="reveal product-card rounded-2xl p-6 text-center">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9 6 9-6M5 7v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">Pay on delivery</h3>
+        <p class="text-sm text-white/50">In Lagos, Abuja, PH. Cash or transfer on receipt.</p>
+      </div>
+      <div class="reveal product-card rounded-2xl p-6 text-center">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18M3 6h18M3 18h18"/></svg>
+        </div>
+        <h3 class="font-semibold mb-1">Real specs</h3>
+        <p class="text-sm text-white/50">Battery health, condition photos, full disclosure.</p>
+      </div>
+    </div>
+
+    <div id="preownedGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- ===== ACCESSORIES BANNER ===== -->
+<section id="accessories" class="py-20 md:py-28 px-5 md:px-8 bg-panel border-y border-line">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
+    <a href="#" class="reveal relative rounded-3xl overflow-hidden aspect-[4/3] md:aspect-[5/4] group">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+      <div class="relative p-8 md:p-12 h-full flex flex-col justify-end">
+        <p class="text-accent text-xs uppercase tracking-[0.3em] mb-2">Audio</p>
+        <h3 class="text-3xl md:text-5xl font-semibold mb-2">Sound, refined.</h3>
+        <p class="text-white/70 max-w-sm">From Sony WH-1000XM5 to AirPods Pro — all original.</p>
+        <span class="mt-4 text-accent text-sm">Shop audio →</span>
+      </div>
+    </a>
+    <a href="#" class="reveal relative rounded-3xl overflow-hidden aspect-[4/3] md:aspect-[5/4] group">
+      <img src="https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+      <div class="relative p-8 md:p-12 h-full flex flex-col justify-end">
+        <p class="text-accent text-xs uppercase tracking-[0.3em] mb-2">Essentials</p>
+        <h3 class="text-3xl md:text-5xl font-semibold mb-2">Cases. Cables. Power.</h3>
+        <p class="text-white/70 max-w-sm">The little things that keep your kit running.</p>
+        <span class="mt-4 text-accent text-sm">Shop accessories →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== REPAIR SERVICE ===== -->
+<section id="repairs" class="py-20 md:py-32 px-5 md:px-8 relative overflow-hidden">
+  <div class="absolute -top-32 right-0 w-[500px] h-[500px] chroma -z-10 opacity-30"></div>
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal grid md:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <p class="text-accent text-xs uppercase tracking-[0.3em] mb-4">Repair Service</p>
+        <h2 class="text-4xl md:text-6xl font-semibold tracking-tight grad-text leading-[1.05]">
+          Cracked. Frozen. <br/>Drowned. <span class="accent-grad">Fixed.</span>
+        </h2>
+        <p class="mt-6 text-white/65 text-lg max-w-md">Same-day repairs in Lagos. Original parts. 90-day warranty on every fix. Drop-off at our V.I. lab or send a rider — we'll diagnose for free.</p>
+        <div class="mt-8 flex gap-3 flex-wrap">
+          <a href="#book-repair" class="btn-primary px-6 py-3 rounded-full font-semibold text-sm">Book a repair</a>
+          <a href="https://wa.me/2348024100099?text=Hi%20KOVA%2C%20I%20need%20a%20device%20repaired" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold border border-white/15 hover:border-green-400 hover:text-green-400 transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.9-.4-1.7-.9-2.4-1.6-.6-.6-1.1-1.3-1.5-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+            Chat with a tech
+          </a>
+        </div>
+        <div class="mt-10 grid grid-cols-3 gap-5 max-w-md">
+          <div><p class="text-3xl font-bold accent-grad">90d</p><p class="text-xs text-white/45 mt-1">Warranty</p></div>
+          <div><p class="text-3xl font-bold accent-grad">2hr</p><p class="text-xs text-white/45 mt-1">Avg. fix time</p></div>
+          <div><p class="text-3xl font-bold accent-grad">Free</p><p class="text-xs text-white/45 mt-1">Diagnosis</p></div>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1581993192873-bf5e8d5b8b96?auto=format&fit=crop&w=900&q=80" class="rounded-2xl w-full object-cover aspect-[4/5]" alt="Repair technician at work"/>
+        <div class="absolute -bottom-6 -left-6 bg-panel border border-line rounded-2xl p-5 max-w-[220px] hidden md:block">
+          <div class="flex gap-0.5 text-yellow-400 text-xs mb-2">★★★★★</div>
+          <p class="text-sm text-white/85">"Fixed my MacBook logic board in 3 hours. Charged half what others quoted."</p>
+          <p class="text-xs text-white/45 mt-2">— Femi, Yaba</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repair categories grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+      <div class="reveal product-card rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Phone Screen Replacement</h3>
+        <p class="text-white/55 text-sm mb-4">OEM and quality aftermarket screens for iPhone, Samsung, Pixel, Tecno, Infinix, Xiaomi.</p>
+        <p class="font-bold accent-grad text-lg">From ₦35,000</p>
+      </div>
+
+      <div class="reveal product-card rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="18" height="10" rx="2"/><path d="M22 10v4M6 11l3 3M9 11l-3 3"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Battery Replacement</h3>
+        <p class="text-white/55 text-sm mb-4">Genuine Apple-grade and OEM batteries. Restore battery health to 100% in under an hour.</p>
+        <p class="font-bold accent-grad text-lg">From ₦28,000</p>
+      </div>
+
+      <div class="reveal product-card rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 20h20"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Laptop Repair</h3>
+        <p class="text-white/55 text-sm mb-4">Screens, keyboards, hinges, motherboard repair, fan replacement, thermal paste — for MacBook, Dell, HP, Lenovo.</p>
+        <p class="font-bold accent-grad text-lg">From ₦45,000</p>
+      </div>
+
+      <div class="reveal product-card rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Liquid Damage Recovery</h3>
+        <p class="text-white/55 text-sm mb-4">Ultrasonic cleaning, board-level repair. We recover devices others write off.</p>
+        <p class="font-bold accent-grad text-lg">From ₦60,000</p>
+      </div>
+
+      <div class="reveal product-card rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a4 4 0 0 1-4 4H7a5 5 0 1 1 1.5-9.8A6 6 0 0 1 21 15z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Data Recovery</h3>
+        <p class="text-white/55 text-sm mb-4">Bricked phone? Dead drive? We recover photos, contacts and files from most disasters.</p>
+        <p class="font-bold accent-grad text-lg">From ₦40,000</p>
+      </div>
+
+      <div class="reveal product-card rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Software & iCloud Unlock</h3>
+        <p class="text-white/55 text-sm mb-4">OS reinstall, jailbreak fixes, frp removal, country unlock, virus removal — done while you wait.</p>
+        <p class="font-bold accent-grad text-lg">From ₦15,000</p>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="reveal product-card rounded-3xl p-8 md:p-12">
+      <h3 class="text-2xl md:text-3xl font-semibold mb-10 text-center">How it works</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-5xl font-bold accent-grad mb-3">01</div>
+          <h4 class="font-semibold mb-1">Tell us what's wrong</h4>
+          <p class="text-sm text-white/55">Book online or send a WhatsApp message with photos.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold accent-grad mb-3">02</div>
+          <h4 class="font-semibold mb-1">Free diagnosis & quote</h4>
+          <p class="text-sm text-white/55">Drop-off, walk-in or send a rider. Quote in under 30 minutes.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold accent-grad mb-3">03</div>
+          <h4 class="font-semibold mb-1">Approve & we fix</h4>
+          <p class="text-sm text-white/55">Most repairs done same-day. Live updates by WhatsApp.</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold accent-grad mb-3">04</div>
+          <h4 class="font-semibold mb-1">90-day warranty</h4>
+          <p class="text-sm text-white/55">Pay on pickup. Covered for 90 days, no fine print.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repair booking form -->
+    <div id="book-repair" class="reveal mt-14 max-w-3xl mx-auto product-card rounded-3xl p-8 md:p-12">
+      <h3 class="text-2xl md:text-4xl font-semibold mb-2 grad-text">Book a repair</h3>
+      <p class="text-white/55 mb-8">We'll get back within 30 minutes during business hours.</p>
+      <form id="repairForm" class="grid md:grid-cols-2 gap-4">
+        <input class="bg-panel2 border border-line rounded-xl px-5 py-3.5 focus:border-accent focus:outline-none transition md:col-span-2" placeholder="Your name" required/>
+        <input class="bg-panel2 border border-line rounded-xl px-5 py-3.5 focus:border-accent focus:outline-none transition" placeholder="Phone number" required/>
+        <input type="email" class="bg-panel2 border border-line rounded-xl px-5 py-3.5 focus:border-accent focus:outline-none transition" placeholder="Email"/>
+        <select class="bg-panel2 border border-line rounded-xl px-5 py-3.5 focus:border-accent focus:outline-none transition" required>
+          <option value="" disabled selected>Device type</option>
+          <option>iPhone</option>
+          <option>Android phone</option>
+          <option>MacBook</option>
+          <option>Windows laptop</option>
+          <option>Tablet / iPad</option>
+          <option>Other</option>
+        </select>
+        <select class="bg-panel2 border border-line rounded-xl px-5 py-3.5 focus:border-accent focus:outline-none transition" required>
+          <option value="" disabled selected>Issue</option>
+          <option>Cracked screen</option>
+          <option>Battery problems</option>
+          <option>Liquid damage</option>
+          <option>Wont turn on</option>
+          <option>Software / iCloud</option>
+          <option>Data recovery</option>
+          <option>Other</option>
+        </select>
+        <textarea rows="3" class="bg-panel2 border border-line rounded-xl px-5 py-3.5 focus:border-accent focus:outline-none transition md:col-span-2" placeholder="Describe what happened (optional)"></textarea>
+        <button type="submit" class="btn-primary md:col-span-2 px-7 py-4 rounded-full font-semibold text-sm">Request a quote</button>
+        <p id="repairOk" class="hidden md:col-span-2 text-center text-green-400 text-sm">Request received. A KOVA technician will reach out within 30 minutes.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY KOVA ===== -->
+<section id="why" class="py-20 md:py-32 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal text-center mb-14">
+      <p class="text-accent text-xs uppercase tracking-[0.3em] mb-3">Why KOVA</p>
+      <h2 class="text-3xl md:text-6xl font-semibold tracking-tight grad-text">No surprises. Just kit that works.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="reveal product-card rounded-2xl p-8">
+        <p class="text-5xl font-bold accent-grad mb-3">100%</p>
+        <h3 class="text-xl font-semibold mb-2">Authentic, always</h3>
+        <p class="text-white/55">Every device is sourced direct or through authorised channels. IMEI verified on the box.</p>
+      </div>
+      <div class="reveal product-card rounded-2xl p-8">
+        <p class="text-5xl font-bold accent-grad mb-3">24h</p>
+        <h3 class="text-xl font-semibold mb-2">Lagos delivery</h3>
+        <p class="text-white/55">Order before 2pm, receive same day on the Island. Mainland and Abuja within 24h.</p>
+      </div>
+      <div class="reveal product-card rounded-2xl p-8">
+        <p class="text-5xl font-bold accent-grad mb-3">2 yrs</p>
+        <h3 class="text-xl font-semibold mb-2">Warranty on new</h3>
+        <p class="text-white/55">Full manufacturer cover plus our extended care on all sealed devices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="py-20 md:py-28 px-5 md:px-8 bg-panel border-y border-line">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal text-center mb-12">
+      <p class="text-accent text-xs uppercase tracking-[0.3em] mb-3">Reviews</p>
+      <h2 class="text-3xl md:text-5xl font-semibold tracking-tight grad-text">2,400+ happy customers.</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-4">
+      <figure class="reveal product-card rounded-2xl p-7">
+        <div class="flex gap-0.5 text-yellow-400 mb-4">★★★★★</div>
+        <blockquote class="text-white/85 leading-relaxed">"Got my MacBook M3 the same day in Lekki. Sealed, original, and the price beat the official store by ₦80k."</blockquote>
+        <figcaption class="mt-5 text-sm text-white/50">— Tobi A., Lagos</figcaption>
+      </figure>
+      <figure class="reveal product-card rounded-2xl p-7">
+        <div class="flex gap-0.5 text-yellow-400 mb-4">★★★★★</div>
+        <blockquote class="text-white/85 leading-relaxed">"I bought a pre-owned iPhone 14 Pro. Battery at 92%, looked brand new. The condition photos matched exactly what I received."</blockquote>
+        <figcaption class="mt-5 text-sm text-white/50">— Halima O., Abuja</figcaption>
+      </figure>
+      <figure class="reveal product-card rounded-2xl p-7">
+        <div class="flex gap-0.5 text-yellow-400 mb-4">★★★★★</div>
+        <blockquote class="text-white/85 leading-relaxed">"Fast WhatsApp replies, real specs, no stories. KOVA is now my go-to for all our office devices."</blockquote>
+        <figcaption class="mt-5 text-sm text-white/50">— Chinedu E., Port Harcourt</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-3xl mx-auto">
+    <div class="reveal text-center mb-12">
+      <p class="text-accent text-xs uppercase tracking-[0.3em] mb-3">FAQ</p>
+      <h2 class="text-3xl md:text-5xl font-semibold tracking-tight grad-text">Questions, answered.</h2>
+    </div>
+
+    <div class="space-y-3">
+      <details class="reveal product-card rounded-2xl p-6 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="text-lg font-semibold">Are your phones and laptops original?</span>
+          <span class="faq-icon text-accent text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-white/65 leading-relaxed">Yes. Every new device is sealed in the factory box with original accessories. We provide IMEI/serial confirmation and you can verify directly with the manufacturer before payment.</p>
+      </details>
+      <details class="reveal product-card rounded-2xl p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="text-lg font-semibold">How does WhatsApp ordering work?</span>
+          <span class="faq-icon text-accent text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-white/65 leading-relaxed">Tap the WhatsApp button on any product. We confirm availability, share photos and final pricing, take your delivery address, then dispatch. You can pay on delivery in Lagos, Abuja and Port Harcourt.</p>
+      </details>
+      <details class="reveal product-card rounded-2xl p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="text-lg font-semibold">What does "certified pre-owned" mean?</span>
+          <span class="faq-icon text-accent text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-white/65 leading-relaxed">Each device passes a 28-point inspection: battery health (must be 85%+), screen, cameras, ports, IMEI clean status, and original-parts verification. You get a condition report and a 30-day warranty.</p>
+      </details>
+      <details class="reveal product-card rounded-2xl p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="text-lg font-semibold">Do you offer installments?</span>
+          <span class="faq-icon text-accent text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-white/65 leading-relaxed">Yes — 3 and 6-month plans available on devices above ₦400,000 through our partner financiers. We also accept bank transfer, card, and cash.</p>
+      </details>
+      <details class="reveal product-card rounded-2xl p-6">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="text-lg font-semibold">Do you ship outside Lagos?</span>
+          <span class="faq-icon text-accent text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-white/65 leading-relaxed">Yes — nationwide via DHL, GIG and Topship. Delivery is free on orders above ₦500,000. Same-day in Lagos, 24–48h to other states.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="py-20 md:py-28 px-5 md:px-8 relative overflow-hidden">
+  <div class="absolute inset-0 chroma -z-10 opacity-40"></div>
+  <div class="max-w-4xl mx-auto text-center reveal">
+    <h2 class="text-4xl md:text-7xl font-bold tracking-tight grad-text">Ready when you are.</h2>
+    <p class="mt-5 text-white/60 text-lg max-w-xl mx-auto">Talk to a KOVA specialist on WhatsApp. No bots, just real humans helping you pick the right device.</p>
+    <div class="mt-9 flex justify-center gap-3 flex-wrap">
+      <a href="https://wa.me/2348024100099?text=Hi%20KOVA%2C%20I%20need%20help%20choosing%20a%20device" target="_blank" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-black px-7 py-3.5 rounded-full font-semibold text-sm transition">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.9-.4-1.7-.9-2.4-1.6-.6-.6-1.1-1.3-1.5-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <a href="#phones" class="btn-ghost px-7 py-3.5 rounded-full font-semibold text-sm">Browse the store</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="border-t border-line px-5 md:px-8 py-14">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
+    <div>
+      <p class="font-bold text-lg">KOVA</p>
+      <p class="text-white/45 mt-3 max-w-xs">Premium phones, laptops and accessories. Sealed or certified pre-owned. Nigeria-wide.</p>
+    </div>
+    <div>
+      <p class="text-white/40 uppercase tracking-widest text-xs mb-4">Shop</p>
+      <ul class="space-y-2 text-white/70">
+        <li><a href="#phones" class="hover:text-accent">Phones</a></li>
+        <li><a href="#laptops" class="hover:text-accent">Laptops</a></li>
+        <li><a href="#preowned" class="hover:text-accent">Pre-Owned</a></li>
+        <li><a href="#accessories" class="hover:text-accent">Accessories</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-white/40 uppercase tracking-widest text-xs mb-4">Support</p>
+      <ul class="space-y-2 text-white/70">
+        <li><a href="#faq" class="hover:text-accent">FAQ</a></li>
+        <li><a href="#" class="hover:text-accent">Warranty</a></li>
+        <li><a href="#" class="hover:text-accent">Shipping</a></li>
+        <li><a href="#" class="hover:text-accent">Returns</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-white/40 uppercase tracking-widest text-xs mb-4">Reach us</p>
+      <ul class="space-y-2 text-white/70">
+        <li>+234 802 410 0099</li>
+        <li>hello@kova.ng</li>
+        <li>23 Adeola Odeku, V.I. Lagos</li>
+      </ul>
+      <div class="flex gap-3 mt-4">
+        <a href="#" class="w-9 h-9 inline-flex items-center justify-center border border-white/15 rounded-full hover:border-accent text-xs">IG</a>
+        <a href="#" class="w-9 h-9 inline-flex items-center justify-center border border-white/15 rounded-full hover:border-accent text-xs">TW</a>
+        <a href="#" class="w-9 h-9 inline-flex items-center justify-center border border-white/15 rounded-full hover:border-accent text-xs">TT</a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between text-xs text-white/40 gap-2">
+    <p>© 2026 KOVA Technologies Ltd · Lagos, Nigeria</p>
+    <p>Privacy · Terms · Cookies</p>
+  </div>
+</footer>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/2348024100099?text=Hi%20KOVA" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/30 transition" aria-label="WhatsApp">
+  <svg class="w-7 h-7 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.9-.4-1.7-.9-2.4-1.6-.6-.6-1.1-1.3-1.5-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+</a>
+
+</body>
+</html>
